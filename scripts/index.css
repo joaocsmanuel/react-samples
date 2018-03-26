@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  background-color: lavender;
+}
+
+.title-card {
+  font-size: 0.9em;
+}
+
+.button-app {
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-app:hover {
+  border-bottom: 1px solid black;
+}
+
+#button-sort-app {
+  float: right;
+  margin-right: 10px;
+}
+
+#button-pages-app {
+  margin-left: 10px;
+}
+
+#main-grid {
+  width: 100%;
+  height: 100%;
+}
+
+#grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 50;
+  width: 100%;
+  height: calc(100% - 49px);
+}
+
+#loading {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -28px 0 0 -25px;
+}
